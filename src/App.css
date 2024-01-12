@@ -1,0 +1,28 @@
+/* App.css */
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+h3 {
+  font-family: 'Your Chosen Font', sans-serif;
+  /* Replace with your chosen font */
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #333;
+  /* Your chosen color */
+  text-align: center;
+  margin-top: 20px;
+  /* Adjust spacing as needed */
+  /* Other styles like text-shadow or gradients can be added for further enhancement */
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 88vh;
+}
+

@@ -1,0 +1,22 @@
+/* Reset box-sizing to handle padding and border properly */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+
+    /* Adjustments for smaller screens */
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar li {
+        margin: 10px 0;
+    }
+}
+
+/* Other global styles, media queries, etc. */
