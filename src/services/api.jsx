@@ -1,4 +1,4 @@
-const BASE_URL = 'http://localhost:3000';
+const BASE_URL = 'https://end-o7bq.onrender.com';
 
 export const get = async (endpoint) => {
     try {

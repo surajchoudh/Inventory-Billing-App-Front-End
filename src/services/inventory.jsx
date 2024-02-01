@@ -1,6 +1,6 @@
 export const getInventoryItems = async () => {
     try {
-        const response = await fetch('http://localhost:3000/api/inventory');
+        const response = await fetch('https://end-o7bq.onrender.com/api/inventory');
         if (!response.ok) {
             throw new Error('Error fetching inventory items.');
         }
@@ -12,7 +12,7 @@ export const getInventoryItems = async () => {
 
 export const addItemToInventory = async (itemData) => {
     try {
-        const response = await fetch('http://localhost:3000/api/inventory', {
+        const response = await fetch('https://end-o7bq.onrender.com/api/inventory', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -30,7 +30,7 @@ export const addItemToInventory = async (itemData) => {
 
 export const updateInventoryItem = async (itemId, updatedData) => {
     try {
-        const response = await fetch(`http://localhost:3000/api/inventory/${itemId}`, {
+        const response = await fetch(`https://end-o7bq.onrender.com/api/inventory/${itemId}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',
@@ -48,7 +48,7 @@ export const updateInventoryItem = async (itemId, updatedData) => {
 
 export const deleteInventoryItem = async (itemId) => {
     try {
-        const response = await fetch(`http://localhost:3000/api/inventory/${itemId}`, {
+        const response = await fetch(`https://end-o7bq.onrender.com/api/inventory/${itemId}`, {
             method: 'DELETE',
         });
         if (!response.ok) {
