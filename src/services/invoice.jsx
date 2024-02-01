@@ -1,7 +1,7 @@
 // Function to fetch all invoices
 export const getInvoices = async () => {
     try {
-        const response = await fetch('http://localhost:3000/api/invoice');
+        const response = await fetch('https://end-o7bq.onrender.com/api/inventory');
         if (!response.ok) {
             throw new Error('Error fetching invoices.');
         }
@@ -14,7 +14,7 @@ export const getInvoices = async () => {
 // Function to create a new invoice
 export const createInvoice = async (invoiceData) => {
     try {
-        const response = await fetch('https://end-o7bq.onrender.com/api/invoice', {
+        const response = await fetch('https://end-o7bq.onrender.com/api/inventory', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
